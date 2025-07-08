@@ -1,0 +1,32 @@
+{
+  "name": "pointage-systeme-de-gestion",
+  "version": "1.0.0",
+  "description": "Application de pointage par empreinte digitale avec Express et MongoDB",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madeleine-dev873/Syst-mePointage_React.git"
+  },
+  "author": "IDY",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madeleine-dev873/Syst-mePointage_React/issues"
+  },
+  "homepage": "https://github.com/Madeleine-dev873/Syst-mePointage_React#readme"
+}
