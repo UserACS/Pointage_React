@@ -1,0 +1,45 @@
+npm install @mui/material @emotion/react @emotion/styled axios
+npm install @mui/icons-material
+npm install react-router-dom
+
+L’erreur 'vite' n’est pas reconnu signifie que Vite n’est pas installé dans votre projet ou que les dépendances n’ont pas encore été installées.
+Voici comment corriger cela étape par étape :
+
+✅ 1. Installer les dépendances du projet
+Dans le dossier racine de votre projet (là où se trouve package.json), exécutez :
+npm install
+
+
+Cela va installer toutes les dépendances, y compris Vite, localement dans le dossier node_modules.
+
+▶️ 2. Lancer le serveur de développement
+Une fois les dépendances installées, vous pouvez démarrer le projet avec :
+npm run dev
+
+
+Cela exécutera la commande vite via le script défini dans package.json.
+
+🧪 Vérification rapide
+Assurez-vous que votre package.json contient bien ceci :
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+}
+
+
+Et que vite est bien listé dans les dépendances :
+"devDependencies": {
+  "vite": "^4.x.x", // ou une autre version
+  ...
+}
+
+
+
+🛠️ Si vous voulez installer Vite globalement (optionnel)
+Ce n’est pas nécessaire, mais si vous voulez pouvoir utiliser la commande vite partout :
+npm install -g vite
+
+
+
+Souhaitez-vous que je vous aide à vérifier ou modifier votre package.json pour que tout soit bien configuré ?
