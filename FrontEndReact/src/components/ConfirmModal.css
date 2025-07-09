@@ -1,0 +1,134 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.confirm-modal {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  max-width: 480px;
+  width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 24px 16px 24px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.modal-icon {
+  font-size: 32px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #f8f9fa;
+}
+
+.confirm-modal.warning .modal-icon {
+  background: #fff3cd;
+}
+
+.confirm-modal.danger .modal-icon {
+  background: #f8d7da;
+}
+
+.confirm-modal.info .modal-icon {
+  background: #d1ecf1;
+}
+
+.confirm-modal.success .modal-icon {
+  background: #d4edda;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #495057;
+  flex: 1;
+}
+
+.modal-body {
+  padding: 16px 24px 24px 24px;
+}
+
+.modal-message {
+  margin: 0;
+  color: #6c757d;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  padding: 0 24px 24px 24px;
+}
+
+.modal-footer .btn {
+  min-width: 80px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .modal-backdrop {
+    padding: 16px;
+  }
+  
+  .modal-header {
+    padding: 20px 20px 12px 20px;
+  }
+  
+  .modal-body {
+    padding: 12px 20px 20px 20px;
+  }
+  
+  .modal-footer {
+    padding: 0 20px 20px 20px;
+    flex-direction: column-reverse;
+  }
+  
+  .modal-footer .btn {
+    width: 100%;
+  }
+  
+  .modal-icon {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .modal-title {
+    font-size: 18px;
+  }
+}
